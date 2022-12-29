@@ -1,22 +1,21 @@
-package com.fuelgrowth.datamodel.model;
+package com.fuelgrowth.datamodel.model.impl;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.validation.constraints.Digits;
-import jakarta.validation.constraints.Email;
 import java.util.Objects;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Email;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import org.hibernate.Hibernate;
-
 
 @Entity
 @Getter
 @Setter
 @ToString
-@RequiredArgsConstructor
+@NoArgsConstructor
 public class Account {
     @Id
     private Long omniId;

@@ -1,15 +1,24 @@
-package com.omnirio.datamodel.model.impl;
+package com.fuelgrowth.datamodel.model.impl;
 
-import jakarta.persistence.Embeddable;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Embeddable
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 public class Variant {
 
-    //maps to Product.omniId
-    private Long productId;
-
+    @Column(name = "var_name")
     private String name;
 
+    @Column(name = "var_sku")
     private String sku;
 
 }

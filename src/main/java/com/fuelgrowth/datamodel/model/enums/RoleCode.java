@@ -1,2 +1,4 @@
-package com.fuelgrowth.datamodel.model.enums;public enum RoleCode {
+package com.fuelgrowth.datamodel.model.enums;
+
+public enum RoleCode {
 }

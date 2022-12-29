@@ -1,11 +1,20 @@
-package com.omnirio.datamodel.model.impl;
+package com.fuelgrowth.datamodel.model.impl;
 
-import com.omnirio.datamodel.model.enums.SaleChannel;
-import com.omnirio.datamodel.model.enums.SaleType;
-import jakarta.persistence.Embeddable;
-import jakarta.persistence.Enumerated;
+import com.fuelgrowth.datamodel.model.enums.SaleChannel;
+import com.fuelgrowth.datamodel.model.enums.SaleType;
+import javax.persistence.Embeddable;
+import javax.persistence.Enumerated;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 
 @Embeddable
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 public class POSaleInfo {
 
     private Long saleId;
@@ -15,7 +24,6 @@ public class POSaleInfo {
 
     @Enumerated
     private SaleChannel saleChannel;
-
 
 
 }

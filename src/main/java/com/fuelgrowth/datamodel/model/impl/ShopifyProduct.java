@@ -1,7 +1,6 @@
-package com.omnirio.datamodel.model.impl;
-
-import com.omnirio.datamodel.model.Product;
+package com.fuelgrowth.datamodel.model.impl;
 
 public class ShopifyProduct extends Product {
 
+    // additional fields found in shopify product
 }

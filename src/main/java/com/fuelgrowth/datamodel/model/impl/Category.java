@@ -1,12 +1,25 @@
-package com.omnirio.datamodel.model.impl;
+package com.fuelgrowth.datamodel.model.impl;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
+@Table(name = "category")
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 public class Category {
 
     @Id
     private Long omniId;
+
+    private String name;
 
 }

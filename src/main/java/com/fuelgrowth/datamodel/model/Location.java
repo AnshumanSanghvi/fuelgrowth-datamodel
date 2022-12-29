@@ -1,4 +1,4 @@
-package com.omnirio.datamodel.model;
+package com.fuelgrowth.datamodel.model;
 
 public interface Location {
 

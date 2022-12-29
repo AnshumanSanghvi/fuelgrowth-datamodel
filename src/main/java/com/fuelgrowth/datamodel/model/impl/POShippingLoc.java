@@ -1,11 +1,18 @@
-package com.omnirio.datamodel.model.impl;
+package com.fuelgrowth.datamodel.model.impl;
 
-import com.omnirio.datamodel.model.Location;
-import jakarta.persistence.Embeddable;
+import com.fuelgrowth.datamodel.model.Location;
+import javax.persistence.Embeddable;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Getter
+
 @Embeddable
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
 public class POShippingLoc implements Location {
 
     private String country;

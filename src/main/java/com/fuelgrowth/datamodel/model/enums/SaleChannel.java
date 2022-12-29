@@ -1,4 +1,4 @@
-package com.omnirio.datamodel.model.enums;
+package com.fuelgrowth.datamodel.model.enums;
 
 public enum SaleChannel {
     ONLINE_STORE
